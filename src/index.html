@@ -1,13 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <title>Password Reset Form</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="./styles/app.pcss" />
-    <script async src="./scripts/app.ts"></script>
-  </head>
-  <body>
-    <div>Replace me with the exercise design</div>
-  </body>
+
+<head>
+  <meta charset="utf-8" />
+  <title>Password Reset Form</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./styles/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" />
+
+</head>
+
+<body>
+  <div class='container'>
+
+    <h1> Forgot Your Password?</h1>
+    <h2> Please enter your email adress below to receive a password reset link.</h2>
+    <div class='container-wrapper'>
+      <div class='container-wrapper-form'>
+        <div class="no-email hidden"> Sorry, there is no account attached to that email adress</div>
+        <div class="success-email hidden">
+          <p> Success, we have emailed your password reset link. </br> </p><span>Lorem ipsum dolor sit amet consectetur,
+            adipisicing elit. Libero aliquam laudantium non. Architecto magni aut eum ipsum sit hic earum laudantium
+            rerum ex. 
+          </span>
+        </div>
+        <h3> Email Adress</h3>
+        <input type="text" class="email" placeholder="Your email address" />
+        <div class="wrong-email hidden "> Please enter valid email address</div>
+        <div class="form-action">
+          <button class='reset'>Reset Password</button>
+          <a href="/">Go Back</a>
+        </div>
+        <span class='need-help'> Are you having trouble resetting the password? <i
+            class="fas fa-chevron-down"></i></span>
+
+        <span class='help hidden'>
+          <p>
+            We have had some customers who mistakenly believe they have a store
+            account when in fact they are only signed up to recieve our VIP Club
+            newsletter
+          </p>
+
+          <p>
+            If you recieve our newsletter but have never made a purchase online
+            this might apply to you, the best way to check this is to do the
+            following:
+          </p>
+
+          <p class="big">1. Go back to the <a href="/">register page</a></p>
+          <p class="big">
+            2. Register with your email address
+
+            <span>If do you already have an account the form will tell you</span>
+          </p>
+
+          <p>
+            If the form tells you you already have an account and the password
+            reset doesn't work please contact the Customer Service Team on 033
+            900 0094
+          </p>
+        </span>
+      </div>
+    </div>
+  </div>
+
+  </div>
+  <script src="./scripts/script.js"></script>
+</body>
+
 </html>

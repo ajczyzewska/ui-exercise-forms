@@ -1,0 +1,135 @@
+:root {
+  --buttoncolor: #005192;
+  --inputactive: #5590c0a8;
+  --buttontext: #e8f1e8;
+  --background: #f7f7f7e0;
+  --reset-password: rgb(146, 146, 146);
+  --white: #fff;
+}
+
+.container {
+  margin: 5% auto;
+  max-width: 800px;
+  text-align: center;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.container-wrapper {
+  background: var(--background);
+  border: 1px solid lightgray;
+  margin-top: 40px;
+}
+h1 {
+  font-size: 30px;
+}
+h2 {
+  font-size: 15px;
+  font-weight: 100;
+}
+
+.container-wrapper-form {
+  padding: 40px;
+
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+input {
+  width: 100%;
+  height: 40px;
+  border-radius: 10px;
+  border: solid black 0.5px;
+  margin-bottom: 40px;
+}
+
+input:hover,
+input:focus {
+  background: var(--inputactive);
+}
+
+.form-action {
+  margin-bottom: 20px;
+}
+.form-action {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.form-action button {
+  background: var(--buttoncolor);
+  color: var(--white);
+  border: none;
+  outline: none;
+  padding: 20px 60px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+button,
+a {
+  cursor: pointer;
+  transition: all 100ms linear;
+}
+a {
+  text-decoration: none;
+  color: var(--buttoncolor);
+}
+a:hover {
+  color: var(--buttoncolor);
+}
+
+button:hover {
+  background: #1f7dcad7;
+}
+
+.need-help {
+  color: var(--buttoncolor);
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.help {
+  background: var(--white);
+  margin: 0 auto 2rem;
+  width: 80%;
+  padding: 10px;
+  margin-top: 10px;
+  border: 1px solid lightgray;
+  color: #323333a8;
+}
+
+.hidden {
+  display: none;
+}
+
+.big {
+  font-size: 15px;
+}
+
+.wrong-email,
+.no-email {
+  font-size: 15px;
+  color: red;
+  padding-bottom: 20px;
+}
+
+.no-email {
+  font-size: 20px;
+}
+.success-email {
+  font-size: 20px;
+  color: var(--buttoncolor);
+  margin-bottom: 30px;
+  text-align: center;
+}
+.success-email span {
+  color: black;
+  font-size: 15px;
+  padding-top: 20px;
+}
